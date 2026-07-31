@@ -1,0 +1,13 @@
+{
+  "name": "sand-and-pebbles",
+  "version": "1.0.0",
+  "description": "A sand goban with dark and light pebble stones",
+  "author": "Borys Lykah",
+  "homepage": "https://github.com/lykahb/goban-decals/tree/master/themes/sand-and-pebbles",
+  "license": "CC-BY-NC-4.0",
+  "main": "styles.css",
+  "stoneVariations": {
+    "black": 36,
+    "white": 36
+  }
+}
