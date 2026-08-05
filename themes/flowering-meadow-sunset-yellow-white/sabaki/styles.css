@@ -1,0 +1,90 @@
+@import url("./stone-variants.css");
+
+.shudan-goban {
+  --shudan-board-border-width: 0;
+  --shudan-board-border-color: #0000;
+  --shudan-board-background-color: #6f810b;
+  --shudan-board-foreground-color: #2e331b;
+  --shudan-black-background-color: #ffbb00;
+  --shudan-black-foreground-color: #4d250a;
+  --shudan-white-background-color: #fce2d8;
+  --shudan-white-foreground-color: #624a41;
+}
+
+#main main {
+  background: #6f810b;
+}
+
+.shudan-goban-image {
+  background: #6f810b url("./board-default.jpeg") center / cover no-repeat;
+}
+
+.shudan-board-9x9 {
+  --baked-board-image: url("./board-9x9.jpeg");
+}
+
+.shudan-board-13x13 {
+  --baked-board-image: url("./board-13x13.jpeg");
+}
+
+.shudan-board-19x19 {
+  --baked-board-image: url("./board-19x19.jpeg");
+}
+
+.shudan-board-9x9.shudan-coordinates,
+.shudan-board-13x13.shudan-coordinates,
+.shudan-board-19x19.shudan-coordinates {
+  background: var(--baked-board-image) center / 100% 100% no-repeat;
+}
+
+.shudan-board-9x9:not(.shudan-coordinates) .shudan-content,
+.shudan-board-13x13:not(.shudan-coordinates) .shudan-content,
+.shudan-board-19x19:not(.shudan-coordinates) .shudan-content {
+  background: var(--baked-board-image) center /
+    calc(100% + 2em) calc(100% + 2em) no-repeat;
+}
+
+.shudan-board-9x9 .shudan-grid,
+.shudan-board-13x13 .shudan-grid,
+.shudan-board-19x19 .shudan-grid {
+  display: none;
+}
+
+.shudan-board-9x9:not(.shudan-coordinates),
+.shudan-board-13x13:not(.shudan-coordinates),
+.shudan-board-19x19:not(.shudan-coordinates) {
+  padding: 0;
+}
+
+.shudan-coordx,
+.shudan-coordy {
+  color: #090d00;
+}
+
+.shudan-vertex.shudan-marker_label.shudan-sign_0 .shudan-marker {
+  background: transparent;
+  -webkit-text-stroke: var(--shudan-board-background-color) 5px;
+  paint-order: stroke fill;
+}
+
+.shudan-vertex:not(.shudan-sign_0) .shudan-stone::before {
+  content: none;
+  background: none;
+  box-shadow: none;
+}
+
+.shudan-vertex.shudan-ghost_1 .shudan-ghost::before {
+  background: #ffd077;
+}
+
+.shudan-vertex.shudan-ghost_-1 .shudan-ghost::before {
+  background: #ede6e3;
+}
+
+.shudan-stone-image.shudan-sign_1,
+.shudan-stone-image.shudan-sign_-1 {
+  width: 115%;
+  height: 115%;
+  top: -7.5%;
+  left: -7.5%;
+}

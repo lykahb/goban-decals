@@ -1,0 +1,13 @@
+{
+  "name": "flowering-meadow-sunset-yellow-white",
+  "version": "1.0.0",
+  "description": "A sunset flowering meadow Go board with yellow and white dandelion stones.",
+  "author": "Borys Lykah",
+  "homepage": "https://github.com/lykahb/goban-decals/tree/master/themes/flowering-meadow-sunset-yellow-white",
+  "license": "CC-BY-NC-4.0",
+  "main": "styles.css",
+  "stoneVariations": {
+    "black": 36,
+    "white": 36
+  }
+}
