@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A daylight flowering meadow with yellow and white dandelion flowers",
   "author": "Borys Lykah",
-  "homepage": "https://github.com/lykahb/goban-decals/tree/master/themes/flowering-meadow-daylight-yellow-white",
+  "homepage": "https://github.com/lykahb/goban-decals/tree/master/themes/flowering-meadow/variants/daylight-dandelions",
   "license": "CC-BY-NC-4.0",
   "main": "styles.css",
   "stoneVariations": {

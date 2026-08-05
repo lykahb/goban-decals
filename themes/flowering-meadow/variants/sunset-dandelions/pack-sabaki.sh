@@ -2,11 +2,11 @@
 set -eu
 
 SCRIPT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
-REPOSITORY_DIR=$(CDPATH= cd -- "$SCRIPT_DIR/../.." && pwd)
+REPOSITORY_DIR=$(CDPATH= cd -- "$SCRIPT_DIR/../../../.." && pwd)
 THEME_DIR="$SCRIPT_DIR/sabaki"
 ASSET_DIR="$SCRIPT_DIR/assets"
-OUTPUT=${1:-"$REPOSITORY_DIR/dist/flowering-meadow-sunset-yellow-white.asar"}
-STAGING_DIR=$(mktemp -d "${TMPDIR:-/tmp}/flowering-meadow-sunset-yellow-white.XXXXXX")
+OUTPUT=${1:-"$REPOSITORY_DIR/dist/sunset-meadow-dandelions.asar"}
+STAGING_DIR=$(mktemp -d "${TMPDIR:-/tmp}/sunset-meadow-dandelions.XXXXXX")
 trap 'rm -rf "$STAGING_DIR"' EXIT HUP INT TERM
 
 mkdir -p "$STAGING_DIR/LICENSES" "$STAGING_DIR/stones" "$(dirname -- "$OUTPUT")"
