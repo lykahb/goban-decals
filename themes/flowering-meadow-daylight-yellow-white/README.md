@@ -28,7 +28,7 @@ following JSON:
     "custom": {
       "backgroundColor": "#6f810b",
       "gridColor": "#2e331b",
-      "labelColor": "#090d00",
+      "labelColor": "#2e331b",
       "backgroundImageUrl": "https://lykahb.com/goban-decals/themes/flowering-meadow-daylight-yellow-white/assets/boards/board-default.jpeg",
       "gridBackgroundImageUrls": {
         "9x9": "https://lykahb.com/goban-decals/themes/flowering-meadow-daylight-yellow-white/assets/boards/board-9x9.jpeg",
@@ -153,14 +153,14 @@ uvx pandanet-tweaker replace \
   --black-stone-variant "assets/stones/black-*.png" \
   --white-stone assets/stones/white-01.png \
   --white-stone-variant "assets/stones/white-*.png" \
-  --board-label-color "#2e331c" \
+  --board-label-color "#2e331b" \
   --board-label-halo-color "#6f810b" \
   --black-territory-color "#ffcd1c" \
   --white-territory-color "#fce2d8" \
   --black-stone-label-color "#612d0a" \
   --white-stone-label-color "#5d523c" \
   --grid-color "#2e331b" \
-  --coordinate-label-color "#090d00" \
+  --coordinate-label-color "#2e331b" \
   --stone-scale 1.15
 ```
 
