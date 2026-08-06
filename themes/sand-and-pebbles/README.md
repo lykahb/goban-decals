@@ -6,18 +6,17 @@ A grid drawn with a stick on the beach sand. The stones are dark and light pebbl
 
 ## Sabaki
 
-Download the self-contained Sand and Pebbles theme from
-[GitHub Releases](https://github.com/lykahb/goban-decals/releases), then install
-the `.asar` file through Sabaki's theme preferences.
-
-The files under [`sabaki/`](sabaki/) show the client-specific package metadata
-and CSS. The released archive also contains copies of the canonical board and
-stone assets.
+Download
+[sand-and-pebbles.asar](https://github.com/lykahb/goban-decals/releases/download/latest/sand-and-pebbles.asar), then install
+the file through Sabaki's theme preferences.
 
 ## OGS
 
 Open **Settings → Themes & Visuals**, choose **Import theme**, and paste the
 following JSON:
+
+<details>
+<summary>Expand JSON</summary>
 
 ```json
 {
@@ -136,6 +135,7 @@ following JSON:
   "fuzzyPlacement": false
 }
 ```
+</details>
 
 ## GoPanda2/Pandanet
 
