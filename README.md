@@ -9,8 +9,8 @@ These themes integrate the grid naturally into the board artwork and include doz
 | Theme | Preview |
 | --- | --- |
 | [Sand and Pebbles](themes/sand-and-pebbles/)<br>Variants:<br>- Pebbles on a beach | <img src="themes/sand-and-pebbles/preview.webp" width="240"> |
-| [Flowering Meadow](themes/flowering-meadow/)<br>Variants:<br>- Daylight lighting<br>- Sunset lighting  | <img src="themes/flowering-meadow/variants/daylight-dandelions/preview.webp" width="240"> |
-| [Starfield](themes/starfield/)<br>Variants:<br>- Red and yellow orbs<br>- Blue and yellow orbs  | <img src="themes/starfield/variants/red-yellow/preview.webp" width="240"> |
+| [Flowering Meadow](themes/flowering-meadow/)<br>Variants:<br>- Daylight lighting<br>- Sunset lighting  | <img src="themes/flowering-meadow/variants/daylight-dandelions/preview.webp" width="240"> <img src="themes/flowering-meadow/variants/sunset-dandelions/preview.webp" width="240"> |
+| [Starfield](themes/starfield/)<br>Variants:<br>- Red and yellow orbs<br>- Blue and yellow orbs  | <img src="themes/starfield/variants/red-yellow/preview.webp" width="240"> <img src="themes/starfield/variants/blue-yellow/preview.webp" width="240"> |
 
 Each theme page contains installation instructions for OGS, Pandanet and Sabaki.
 
