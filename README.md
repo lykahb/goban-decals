@@ -12,8 +12,9 @@ These themes integrate the grid naturally into the board artwork and include doz
 | [Flowering Meadow](themes/flowering-meadow/) | <img src="themes/flowering-meadow/variants/daylight-dandelions/preview.webp" width="240"> | - Daylight lighting<br>- Sunset lighting |
 | [Starfield](themes/starfield/) | <img src="themes/starfield/variants/red-yellow/preview.webp" width="240"> | - Red and yellow orbs<br>- Blue and yellow orbs |
 
-Each theme page contains installation instructions for OGS, Pandanet and Sabaki. The Sabaki packages
-are published under [Releases](https://github.com/lykahb/goban-decals/releases).
+Each theme page contains installation instructions for OGS, Pandanet and Sabaki.
+
+The Sabaki packages are published under [Releases](https://github.com/lykahb/goban-decals/releases). The boards are best displayed on `0.60.3` or later.
 
 Thanks to the client maintainers who accepted the changes needed to support these themes.
 
