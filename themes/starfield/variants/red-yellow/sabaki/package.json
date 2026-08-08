@@ -1,0 +1,13 @@
+{
+  "name": "starfield-red-yellow",
+  "version": "1.0.0",
+  "description": "A deep blue starfield with red and yellow glowing stones.",
+  "author": "Borys Lykah",
+  "homepage": "https://github.com/lykahb/goban-decals/tree/master/themes/starfield/variants/red-yellow",
+  "license": "CC-BY-NC-4.0",
+  "main": "styles.css",
+  "stoneVariations": {
+    "black": 24,
+    "white": 24
+  }
+}

@@ -1,0 +1,77 @@
+@import url("./stone-variants.css");
+
+.shudan-goban {
+  --shudan-board-border-width: 0;
+  --shudan-board-border-color: #0000;
+  --shudan-board-background-color: #040a27;
+  --shudan-board-foreground-color: #d8b373;
+  --shudan-black-background-color: #e25936;
+  --shudan-black-foreground-color: #3c250b;
+  --shudan-white-background-color: #f9e2af;
+  --shudan-white-foreground-color: #54514a;
+}
+
+#main main {
+  background: #040a27;
+}
+
+.shudan-goban-image {
+  background: #040a27 url("./board-default.jpeg") center / cover no-repeat;
+}
+
+.shudan-board-9x9 { --baked-board-image: url("./board-9x9.jpeg"); }
+.shudan-board-13x13 { --baked-board-image: url("./board-13x13.jpeg"); }
+.shudan-board-19x19 { --baked-board-image: url("./board-19x19.jpeg"); }
+
+.shudan-board-9x9.shudan-coordinates,
+.shudan-board-13x13.shudan-coordinates,
+.shudan-board-19x19.shudan-coordinates {
+  background: var(--baked-board-image) center / 100% 100% no-repeat;
+}
+
+.shudan-board-9x9:not(.shudan-coordinates) .shudan-content,
+.shudan-board-13x13:not(.shudan-coordinates) .shudan-content,
+.shudan-board-19x19:not(.shudan-coordinates) .shudan-content {
+  background: var(--baked-board-image) center /
+    calc(100% + 2em) calc(100% + 2em) no-repeat;
+}
+
+.shudan-board-9x9 .shudan-grid,
+.shudan-board-13x13 .shudan-grid,
+.shudan-board-19x19 .shudan-grid {
+  display: none;
+}
+
+.shudan-board-9x9:not(.shudan-coordinates),
+.shudan-board-13x13:not(.shudan-coordinates),
+.shudan-board-19x19:not(.shudan-coordinates) {
+  padding: 0;
+}
+
+.shudan-vertex.shudan-sign_0 .shudan-marker {
+  background: #fff9f0;
+}
+
+.shudan-vertex.shudan-marker_label.shudan-sign_0 .shudan-marker {
+  color: #fff9f0;
+  background: transparent;
+  -webkit-text-stroke: #040a27 5px;
+  paint-order: stroke fill;
+}
+
+.shudan-vertex:not(.shudan-sign_0) .shudan-stone::before {
+  content: none;
+  background: none;
+  box-shadow: none;
+}
+
+.shudan-vertex.shudan-ghost_1 .shudan-ghost::before { background: #e35a37; }
+.shudan-vertex.shudan-ghost_-1 .shudan-ghost::before { background: #f9e2af; }
+
+.shudan-stone-image.shudan-sign_1,
+.shudan-stone-image.shudan-sign_-1 {
+  width: 130%;
+  height: 130%;
+  top: -15%;
+  left: -15%;
+}

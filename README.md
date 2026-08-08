@@ -10,6 +10,7 @@ These themes integrate the grid naturally into the board artwork and include doz
 | --- | --- | --- |
 | [Sand and Pebbles](themes/sand-and-pebbles/) | <img src="themes/sand-and-pebbles/preview.webp" width="240"> | - Pebbles on a beach |
 | [Flowering Meadow](themes/flowering-meadow/) | <img src="themes/flowering-meadow/variants/daylight-dandelions/preview.webp" width="240"> | - Daylight lighting<br>- Sunset lighting |
+| [Starfield](themes/starfield/) | <img src="themes/starfield/variants/red-yellow/preview.webp" width="240"> | - Red and yellow orbs<br>- Blue and yellow orbs |
 
 Each theme page contains installation instructions for OGS, Pandanet and Sabaki. The Sabaki packages
 are published under [Releases](https://github.com/lykahb/goban-decals/releases).
