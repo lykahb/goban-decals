@@ -339,5 +339,5 @@ uvx pandanet-tweaker replace \
 
 ## Attribution and license
 
-“Flowering Meadow” by Borys Lykah is licensed under
+The artwork for “Flowering Meadow” by Borys Lykah is licensed under
 [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).

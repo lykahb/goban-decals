@@ -166,5 +166,5 @@ uvx pandanet-tweaker replace \
 
 ## Attribution and license
 
-“Sand and Pebbles” by Borys Lykah is licensed under
+The artwork for “Sand and Pebbles” by Borys Lykah is licensed under
 [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).

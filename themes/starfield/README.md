@@ -281,5 +281,5 @@ uvx pandanet-tweaker replace \
 
 ## Attribution and license
 
-“Starfield” by Borys Lykah is licensed under
+The artwork for “Starfield” by Borys Lykah is licensed under
 [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).

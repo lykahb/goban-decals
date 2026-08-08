@@ -19,6 +19,8 @@ Thanks to the client maintainers who accepted the changes needed to support thes
 
 ## License
 
-Theme artwork and documentation are licensed under
-[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). See
-[LICENSE.md](LICENSE.md) for details. The artwork was AI-generated and substantially edited afterward.
+Artwork is licensed under
+[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). Scripts, CSS,
+configuration, documentation, and other non-artwork files are licensed under
+the MIT License. See [LICENSE.md](LICENSE.md) for details. The artwork was
+AI-generated and substantially edited afterward.

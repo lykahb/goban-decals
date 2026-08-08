@@ -2,9 +2,10 @@
 
 ## Contributions and licensing
 
-Theme contributions are expected to be shared under the same
-[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) license as this
-project. Please only contribute work you created or have permission to share,
+Artwork contributions are expected to use the project's
+[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) license. Code,
+CSS, configuration, and documentation contributions are expected to use the MIT
+License. Please only contribute work you created or have permission to share,
 and include the name or link you would like used for credit. Contributions will
 be attributed where appropriate.
 

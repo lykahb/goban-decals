@@ -79,6 +79,7 @@ PACKAGE_FILE="$SABAKI_DIR/package.json"
 [ -f "$REPOSITORY_DIR/LICENSE.md" ] || fail "missing repository LICENSE.md"
 [ -f "$REPOSITORY_DIR/LICENSES/CC-BY-NC-4.0.txt" ] || \
   fail "missing CC-BY-NC-4.0 license text"
+[ -f "$REPOSITORY_DIR/LICENSES/MIT.txt" ] || fail "missing MIT license text"
 command -v node >/dev/null 2>&1 || fail "Node.js is required to read package.json"
 
 PACKAGE_NAME=$(node -e '
@@ -150,6 +151,7 @@ copy_images "$BOARDS_DIR" "$STAGING_DIR"
 copy_images "$STONES_DIR" "$STAGING_DIR/stones"
 cp "$REPOSITORY_DIR/LICENSE.md" "$STAGING_DIR/LICENSE.md"
 cp "$REPOSITORY_DIR/LICENSES/CC-BY-NC-4.0.txt" "$STAGING_DIR/LICENSES/"
+cp "$REPOSITORY_DIR/LICENSES/MIT.txt" "$STAGING_DIR/LICENSES/"
 
 if command -v asar >/dev/null 2>&1; then
   asar pack "$STAGING_DIR" "$TEMP_ARCHIVE"
