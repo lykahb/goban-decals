@@ -4,7 +4,7 @@ Soft, organic meadow boards arranged as organic green squares, with flowers
 used as the stones. The realistic grass is challenging to make look good with a grid, so I gave the boards rather mossy fantastical look.
 
 | Variant | Preview |
-| --- | --- | --- |
+| --- | --- |
 | [Daylight Dandelions](#daylight-dandelions) | <img src="variants/daylight-dandelions/preview.webp" width="240"> |
 | [Sunset Dandelions](#sunset-dandelions) | <img src="variants/sunset-dandelions/preview.webp" width="240"> |
 
