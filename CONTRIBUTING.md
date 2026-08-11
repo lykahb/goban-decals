@@ -54,6 +54,20 @@ Use one `README.md` per theme, even if it has variants. For variants, include an
 separate Sabaki, OGS, and GoPanda2/Pandanet instructions for each variant. Use
 direct rolling-release ASAR links and collapsible blocks for long OGS JSON.
 
+Generate each preview from its 19x19 board and stones:
+
+```bash
+scripts/make-preview.sh \
+  --board themes/starfield/assets/boards/board-19x19.jpeg \
+  --stones themes/starfield/variants/red-yellow/assets/stones \
+  --stone-scale 1.3 \
+  --output themes/starfield/variants/red-yellow/preview.webp
+```
+
+The defaults are 1800×1800 and WebP quality 92. Pass `--size` or `--quality` to
+override them. Use `--black-scale` and `--white-scale` instead of
+`--stone-scale` when the colors need different scales.
+
 ## Building a Sabaki theme
 
 Pass the checked-in Sabaki files, boards, and stones explicitly:
