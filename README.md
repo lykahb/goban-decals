@@ -23,5 +23,6 @@ Thanks to the client maintainers who accepted the changes needed to support thes
 Artwork is licensed under
 [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). Scripts, CSS,
 configuration, documentation, and other non-artwork files are licensed under
-the MIT License. See [LICENSE.md](LICENSE.md) for details. The artwork was
-AI-generated and substantially edited afterward.
+the MIT License. See [LICENSE.md](LICENSE.md) for details.
+
+The artwork was developed with AI assistance using curated reference material, including original photography, and custom geometric guide images. Generated material was substantially edited and adapted to meet the geometric constraints and improve the visuals.
