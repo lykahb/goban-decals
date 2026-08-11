@@ -13,10 +13,12 @@ the file through Sabaki's theme preferences.
 ## OGS
 
 Open **Settings → Themes & Visuals**, choose **Import theme**, and paste the
-following JSON:
+then paste the configuration below:
 
 <details>
-<summary>Expand JSON</summary>
+<summary>Show theme configuration</summary>
+
+Use the **Copy** icon in the upper right of the block below.
 
 ```json
 {
