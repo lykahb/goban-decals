@@ -165,16 +165,28 @@ W:3:15 B:10:15 W:14:15 W:15:15 B:16:15
 B:5:16 W:7:16 B:15:16 B:17:16
 B:16:17'
 
+# Board artwork reserves 1.5 grid spacings on each edge for coordinates. Preview
+# images omit coordinates, so crop that technical margin to 0.6 spacings.
+SOURCE_BOARD_UNITS=21
+PREVIEW_BOARD_UNITS=19.2
+PREVIEW_MARGIN=0.6
+BOARD_SIZE=$(awk -v size="$SIZE" -v source="$SOURCE_BOARD_UNITS" \
+  -v preview="$PREVIEW_BOARD_UNITS" \
+  'BEGIN { printf "%.0f", size * source / preview }')
 BLACK_SIZE=$(awk -v size="$SIZE" -v scale="$BLACK_SCALE" \
-  'BEGIN { printf "%.0f", size / 21 * scale }')
+  -v preview="$PREVIEW_BOARD_UNITS" \
+  'BEGIN { printf "%.0f", size / preview * scale }')
 WHITE_SIZE=$(awk -v size="$SIZE" -v scale="$WHITE_SCALE" \
-  'BEGIN { printf "%.0f", size / 21 * scale }')
+  -v preview="$PREVIEW_BOARD_UNITS" \
+  'BEGIN { printf "%.0f", size / preview * scale }')
 [ "$BLACK_SIZE" -gt 0 ] || fail "black stone scale is too small for the output size"
 [ "$WHITE_SIZE" -gt 0 ] || fail "white stone scale is too small for the output size"
 
 black_index=1
 white_index=1
-set -- magick "$BOARD_INPUT" -filter Lanczos -resize "${SIZE}x${SIZE}!"
+set -- magick "$BOARD_INPUT" -filter Lanczos \
+  -resize "${BOARD_SIZE}x${BOARD_SIZE}!" -gravity center -extent "${SIZE}x${SIZE}" \
+  +gravity
 
 for placement in $PLACEMENTS; do
   color=${placement%%:*}
@@ -201,10 +213,12 @@ for placement in $PLACEMENTS; do
   [ -f "$stone" ] || fail "stone variants must be contiguous: missing $stone"
 
   coordinates=$(awk \
-    -v size="$SIZE" -v column="$column" -v row="$row" -v stone="$stone_size" \
+    -v size="$SIZE" -v preview="$PREVIEW_BOARD_UNITS" \
+    -v margin="$PREVIEW_MARGIN" -v column="$column" -v row="$row" \
+    -v stone="$stone_size" \
     'BEGIN {
-      x = (column + 1.5) * size / 21 - stone / 2
-      y = (row + 1.5) * size / 21 - stone / 2
+      x = (column + margin) * size / preview - stone / 2
+      y = (row + margin) * size / preview - stone / 2
       printf "%.0f %.0f", x, y
     }')
   x=${coordinates%% *}
