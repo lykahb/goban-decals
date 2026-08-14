@@ -56,6 +56,10 @@
   padding: 0;
 }
 
+.shudan-vertex .shudan-marker {
+  fill: transparent;
+}
+
 .shudan-vertex.shudan-marker_label.shudan-sign_0 .shudan-marker {
   background: transparent;
   -webkit-text-stroke: var(--shudan-board-background-color) 5px;

@@ -48,8 +48,8 @@
   padding: 0;
 }
 
-.shudan-vertex.shudan-sign_0 .shudan-marker {
-  background: #fff9f0;
+.shudan-vertex .shudan-marker {
+  fill: transparent;
 }
 
 .shudan-vertex.shudan-marker_label.shudan-sign_0 .shudan-marker {
